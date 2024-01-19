@@ -1,0 +1,54 @@
+body {
+	background-color: $BACKGROUND_COLOR_1;
+	font-family: Lato;
+	@include fontz(1.2rem, 400, black, 131%, 0.2px);
+	&._pc {
+		.menu {
+			&__list {
+				> li:hover {
+					.menu__sub-list {
+						opacity: 1;
+						visibility: visible;
+						transform: translate(0px, 0px);
+						pointer-events: all;
+					}
+				}
+			}
+		}
+	}
+	&._touch {
+		.menu__arrow {
+			display: block;
+			width: 0;
+			height: 0;
+			margin: 0px 0px 0px 5px;
+			transition: transform 0.3s ease 0s;
+			border-left: 5px solid transparent;
+			border-right: 5px solid transparent;
+			border-top: 10px solid $COLOR_WHITE;
+		}
+		.menu {
+			&__list {
+				> li {
+					display: flex;
+					align-items: center;
+					&._active {
+						.menu__arrow {
+							transform: rotate(-180deg);
+						}
+						.menu__sub-list {
+							opacity: 1;
+							visibility: visible;
+							transform: translate(0px, 0px);
+							pointer-events: all;
+							z-index: 5;
+						}
+					}
+				}
+			}
+		}
+	}
+	&._lock {
+		overflow: hidden;
+	}
+}

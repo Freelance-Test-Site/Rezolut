@@ -1,0 +1,803 @@
+/**<ОСНОВНОЙ КОНТЕНТ>**************************************************************************************************************************************************/
+/***<Content-1>****************************************************************************************************************/
+.main-block {
+	position: relative;
+	margin: 0px 0px 90px 0px;
+	&__container {
+		padding: 400px 0px 130px 0px;
+	}
+
+	&__body {
+		position: relative;
+		z-index: 5;
+		display: flex;
+		align-items: flex-end;
+		justify-content: space-between;
+	}
+
+	&__header {
+	}
+
+	&__bottom {
+	}
+
+	&__bgimage {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+	}
+}
+.main-block-header {
+	&__text {
+		@include fontz(1.1rem, 400, white, 131%, 0.6px);
+		text-transform: uppercase;
+	}
+	&__title {
+		@include fontz(4.5rem, 400, white, 101%, 0.6px);
+		font-family: Cormorant;
+		span {
+			background-color: #d0b194;
+			border-radius: 14px;
+			// padding: 0px 15px 5px;
+			position: relative;
+			max-width: 100%;
+			height: 100%;
+			// top: -58px;
+			left: 85px;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		}
+	}
+}
+.main-block-bottom {
+	h3 {
+		@include fontz(2.5rem, 500, white, 100%, 0.6px);
+		font-family: Cormorant;
+	}
+	p {
+		@include fontz(1.2rem, 400, white, 150%, 0.2px);
+	}
+	&__item {
+		border: 0.2px solid rgba(255, 255, 255, 0.239);
+		border-radius: 32px;
+		width: 264px;
+		padding: 60px 30px 40px 30px;
+		background: rgba(196, 196, 196, 0.1);
+		backdrop-filter: blur(20px);
+		&:not(:last-child) {
+			margin: 0px 0px 20px 0px;
+		}
+	}
+}
+
+/*...Display-adapt......................................................................................................................................*/
+@media (max-width: 1365.98px) {
+	.main-block {
+		&__container {
+			padding: 300px 0px 120px 0px;
+		}
+		&__body {
+			flex-direction: column;
+			align-items: flex-start;
+		}
+		&__header {
+		}
+		&__bottom {
+			display: flex;
+			align-items: flex-end;
+		}
+	}
+	.main-block-header {
+		&__title {
+			@include fontz(3.6rem, 400, white, 101%, 0.6px);
+			span {
+				padding: 0px 5px 0px;
+				position: relative;
+				max-width: 335px;
+				height: 50px;
+				top: -52px;
+				left: 85px;
+			}
+		}
+	}
+	.main-block-bottom {
+		h3 {
+			@include fontz(1.8rem, 500, white, 100%, 0.6px);
+		}
+		:not(:last-child) {
+			margin: 0px 20px 5px 0px;
+		}
+		&__item {
+			width: 100%;
+			min-width: 298px;
+			height: 98px;
+			padding: 20px 25px;
+			&:first-child {
+				min-width: 350px;
+			}
+		}
+	}
+}
+@media (max-width: 767.98px) {
+	.main-block {
+		margin: 0px 0px 50px 0px;
+		&__container {
+		}
+		&__body {
+			flex-direction: column;
+			align-items: flex-start;
+		}
+		&__header {
+		}
+		&__bottom {
+			display: flex;
+			align-items: flex-end;
+		}
+	}
+	.main-block-header {
+		margin: 0px 0px 40px 0px;
+		&__text {
+			@include fontz(1rem, 400, white, 131%, 0.6px);
+		}
+		&__title {
+			@include fontz(2.4rem, 400, white, 101%, 0.6px);
+			span {
+				width: 230px;
+				height: 35px;
+				top: -32px;
+				left: 45px;
+			}
+		}
+	}
+	.main-block-bottom {
+		display: flex;
+		flex-direction: column;
+		align-items: start;
+		h3 {
+			@include fontz(1.4rem, 500, white, 100%, 0.6px);
+		}
+		p {
+			@include fontz(1.1rem, 400, white, 100%, 0.6px);
+		}
+		&__item {
+			border: none;
+			background: none;
+			backdrop-filter: none;
+			padding: 0px;
+			height: 100%;
+			&:not(:last-child) {
+				margin: 0px 0px 20px 0px;
+			}
+		}
+	}
+}
+/*....</Display-adapt>.....................................................................................................................................*/
+/***</Content-1>****************************************************************************************************************/
+
+/***<Content-2>****************************************************************************************************************/
+.about-us-block {
+	margin: -120px 0px 0px 0px;
+	display: flex;
+	align-items: center;
+	&__container {
+		padding: 100px 0px 50px 0px;
+	}
+	&__wrapper {
+		border-radius: 32px;
+		background-color: #f8f8f8;
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		z-index: 100;
+		padding: 100px 50px 55px 50px;
+		margin: -100px 0px 0px 0px;
+		max-width: 1220px;
+	}
+	&__title {
+		justify-content: center;
+	}
+
+	&__body {
+		position: relative;
+		text-align: center;
+	}
+
+	&__top {
+		margin: 0px 0px 100px 0px;
+		p {
+			@include fontz(2.8rem, 400, #2f2f2f, 100%, 0.2);
+			font-family: Cormorant;
+		}
+	}
+
+	&__bottom {
+		&:before {
+			content: "";
+			display: block;
+			width: 100%;
+			height: 1px;
+			background: #2f2f2f;
+			left: 0;
+			top: 170px;
+			position: absolute;
+		}
+	}
+
+	&__items {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-wrap: wrap;
+		margin: 0px -25px;
+	}
+
+	&__item {
+		flex: 0 1 33.333%;
+		padding: 0px 25px;
+		margin: 0px 0px 40px 0px;
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		align-items: center;
+		h3 {
+			@include fontz(2.1rem, 400, #2f2f2f, 100%, 0.2);
+			font-family: Cormorant;
+			margin: 0px 0px 15px 0px;
+		}
+		p {
+			@include fontz(1.1rem, 400, #2f2f2f, 150%, 0.1);
+			max-width: 250px;
+			text-align: center;
+		}
+	}
+
+	&__modal-form {
+		display: flex;
+		align-items: center;
+		text-align: center;
+		p {
+			padding: 0px 15px 0px 0px;
+			@include fontz(1.1rem, 400, #d0b194, 150%, 0.1);
+		}
+		svg {
+			display: block;
+		}
+	}
+}
+
+/*...Display-adapt......................................................................................................................................*/
+@media (max-width: 1365.98px) {
+	.about-us-block {
+		margin: -120px 0px 0px 0px;
+
+		&__container {
+			padding: 100px 0px 50px 0px;
+		}
+		&__wrapper {
+			max-width: 100%;
+		}
+		&__body {
+			text-align: start;
+		}
+		&__title {
+			justify-content: start;
+		}
+		&__item {
+			flex: 0 1 50%;
+			align-items: flex-start;
+			h3 {
+				@include fontz(2.1rem, 400, #2f2f2f, 100%, 0.2);
+				font-family: Cormorant;
+				margin: 0px 0px 15px 0px;
+			}
+			p {
+				text-align: left;
+				@include fontz(1.1rem, 400, #2f2f2f, 150%, 0.1);
+			}
+		}
+
+		&__modal-form {
+			p {
+				padding: 0px 15px 0px 0px;
+				@include fontz(1.1rem, 400, #d0b194, 150%, 0.1);
+			}
+		}
+	}
+}
+@media (max-width: 767.98px) {
+	.about-us-block {
+		margin: -80px 0px 0px 0px;
+		&__container {
+			padding: 100px 0px 50px 0px;
+		}
+		&__wrapper {
+			max-width: 100%;
+		}
+		&__item {
+			flex: 0 1 100%;
+			h3 {
+				@include fontz(2.1rem, 400, #2f2f2f, 100%, 0.2);
+				font-family: Cormorant;
+				margin: 0px 0px 15px 0px;
+			}
+			p {
+				@include fontz(1.1rem, 400, #2f2f2f, 150%, 0.1);
+			}
+		}
+		&__bottom {
+			&:before {
+				top: 370px;
+			}
+		}
+		&__modal-form {
+			p {
+				padding: 0px 15px 0px 0px;
+				@include fontz(1.1rem, 400, #d0b194, 150%, 0.1);
+			}
+		}
+	}
+}
+/*....</Display-adapt>.....................................................................................................................................*/
+/***</Content-2>****************************************************************************************************************/
+
+/***<Content-3>****************************************************************************************************************/
+.internet-tv-block {
+	margin: 85px 0px;
+	&__container {
+		position: relative;
+		right: 80px;
+		display: flex;
+	}
+
+	&__wrapper {
+	}
+
+	&__title {
+		justify-content: flex-start;
+		align-items: flex-start;
+		text-align: left;
+		font-size: 1.05rem;
+	}
+
+	&__body {
+	}
+
+	&__top {
+		margin: 0px 0px 81px 0px;
+	}
+
+	&__text-1 {
+		@include fontz(3.6rem, 400, #2f2f2f, 100%, 0.2px);
+		margin: 0px 0px 30px 0px;
+	}
+	&__text-2 {
+		max-width: 368;
+	}
+	&__bottom {
+		position: relative;
+		&:before {
+			content: "";
+			display: block;
+			width: 100%;
+			height: 1px;
+			background: #2f2f2f;
+			opacity: 0.4;
+			left: 0;
+			top: -25px;
+			position: absolute;
+		}
+	}
+
+	&__items {
+		display: flex;
+		margin: 0px 0px 40px 0px;
+	}
+
+	&__item {
+		&:not(:last-child) {
+			margin: 0px 60px 0px 0px;
+		}
+	}
+
+	&__item-number {
+		@include fontz(3.6rem, 400, #d0b194, 100%, 0.2px);
+		margin: 0px 0px 25px 0px;
+	}
+
+	&__item-text {
+		max-width: 200px;
+	}
+	&__modal-form-item {
+		display: flex;
+		align-items: flex-start;
+	}
+	&__modal-form {
+		display: flex;
+		align-items: center;
+		p {
+			padding: 0px 15px 0px 0px;
+			@include fontz(1.1rem, 400, #d0b194, 150%, 0.1);
+		}
+	}
+	&__image {
+		margin: 0px 105px 0px 0px;
+		display: flex;
+		img {
+			max-width: 755px;
+			max-height: 814px;
+			border-radius: 48px;
+			flex: 0 1 100%;
+		}
+	}
+	&__image-tablet {
+		display: none;
+	}
+	&__image-mobile {
+		display: none;
+	}
+}
+/*...Display-adapt......................................................................................................................................*/
+@media (max-width: 1365.98px) {
+	.internet-tv-block {
+		margin: 75px 0px;
+		&__text-1 {
+			@include fontz(2.8rem, 400, #2f2f2f, 100%, 0.2px);
+			margin: 0px 0px 20px 0px;
+		}
+		&__text-2 {
+			max-width: 340;
+		}
+		&__top {
+			margin: 0px 0px 61px 0px;
+		}
+		&__item-number {
+			@include fontz(2.8rem, 400, #d0b194, 100%, 0.2px);
+			margin: 0px 0px 20px 0px;
+		}
+		&__image {
+			margin: 0px 45px 0px 0px;
+			display: flex;
+			img {
+				max-width: 340px;
+				max-height: 700px;
+				border-radius: 48px;
+			}
+		}
+		&__item-text {
+			max-width: 155px;
+		}
+		&__image-desktop {
+			display: none;
+		}
+		&__image-tablet {
+			display: block;
+		}
+		&__item {
+			&:not(:last-child) {
+				margin: 0px 44px 0px 0px;
+			}
+		}
+	}
+}
+@media (max-width: 767.98px) {
+	.internet-tv-block {
+		&__container {
+			right: 0px;
+		}
+		margin: 55px 0px;
+		p {
+			font-size: 1rem;
+		}
+		&__container {
+			flex-direction: column;
+		}
+		&__text-1 {
+			@include fontz(2.4rem, 400, #2f2f2f, 100%, 0.2px);
+			margin: 0px 0px 15px 0px;
+		}
+		&__text-2 {
+			max-width: 340;
+		}
+		&__top {
+			margin: 0px 0px 51px 0px;
+		}
+		&__item-number {
+			@include fontz(2.4rem, 400, #d0b194, 100%, 0.2px);
+			margin: 0px 0px 10px 0px;
+		}
+		&__image {
+			margin: 0px 0px 30px 0px;
+			display: flex;
+			img {
+				width: 100%;
+				margin: 0 auto;
+				max-height: 100%;
+				border-radius: 0px;
+			}
+		}
+		&__item-text {
+			max-width: 155px;
+		}
+		&__image-tablet {
+			display: none;
+		}
+		&__image-mobile {
+			display: block;
+		}
+		&__item {
+			&:not(:last-child) {
+				margin: 0px 44px 0px 0px;
+			}
+		}
+	}
+}
+/*....</Display-adapt>.....................................................................................................................................*/
+/***</Content-3>****************************************************************************************************************/
+
+/***<Content-4>****************************************************************************************************************/
+.reviews-block-body {
+	margin: 90px 0px 125px 0px;
+	position: relative;
+	&__container {
+	}
+}
+.reviews-block-slider {
+	&__wrapper {
+	}
+
+	&__slide {
+	}
+
+	&__review-item {
+	}
+}
+.swiper-container {
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+}
+.review-item {
+	display: flex;
+	align-items: center;
+	&__text {
+		margin: 0px 32px 0px 0px;
+	}
+
+	&__title {
+		justify-content: flex-start;
+		align-items: flex-start;
+		text-align: left;
+		font-size: 1.05rem;
+		margin: 0px 0px 25px 0px;
+	}
+
+	&__text-item {
+		@include fontz(3.6rem, 400, #2f2f2f, 100%, 0.2px);
+		margin: 0px 0px 105px 0px;
+		flex: 0 1 50%;
+	}
+
+	&__city {
+		@include fontz(1.1rem, 400, #2f2f2f, 150%, 0.1);
+		text-align: center;
+	}
+
+	&__image {
+		display: flex;
+		height: 100%;
+		img {
+			max-width: 597px;
+			max-height: 634px;
+			flex: 0 1 100%;
+		}
+	}
+}
+.swiper-button-prev {
+	display: block;
+	position: relative;
+	align-items: center;
+	width: 3%;
+	height: 100%;
+	left: 85%;
+	top: 50px;
+	svg {
+		rotate: (180deg);
+	}
+}
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
+	content: none;
+	display: none;
+}
+.swiper-button-next {
+	display: block;
+	position: relative;
+	width: 3%;
+	height: 100%;
+	left: 95%;
+	top: 50px;
+	svg {
+	}
+}
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-next:after {
+	content: none;
+}
+/*...Display-adapt......................................................................................................................................*/
+@media (max-width: 1365.98px) {
+	.reviews-block-body {
+		margin: 80px 0px 115px 0px;
+		&__container {
+		}
+	}
+	.reviews-block-slider {
+		&__wrapper {
+		}
+	}
+	.review-item {
+		display: flex;
+		align-items: center;
+		&__text {
+			margin: 0px 30px 0px 0px;
+		}
+
+		&__title {
+			justify-content: flex-start;
+			align-items: flex-start;
+			text-align: left;
+			font-size: 1.05rem;
+			margin: 0px 0px 25px 0px;
+		}
+
+		&__text-item {
+			@include fontz(2.8rem, 400, #2f2f2f, 100%, 0.2px);
+			margin: 0px 0px 50px 0px;
+		}
+
+		&__city {
+			@include fontz(1.1rem, 400, #2f2f2f, 150%, 0.1);
+		}
+
+		&__image {
+			display: flex;
+			height: 100%;
+			img {
+				max-width: 441px;
+				max-height: 469px;
+				flex: 0 1 100%;
+			}
+		}
+	}
+	.swiper-button-prev {
+	}
+	.swiper-button-next {
+	}
+}
+@media (max-width: 1023.98px) {
+	.reviews-block-body {
+		margin: 75px 0px 110px 0px;
+		&__container {
+		}
+	}
+	.reviews-block-slider {
+		&__wrapper {
+		}
+	}
+	.review-item {
+		&__image {
+			display: flex;
+			position: relative;
+			margin: 0px -90px 0px 0px;
+			height: 100%;
+			img {
+				max-width: 441px;
+				max-height: 469px;
+				flex: 0 1 100%;
+				// margin: 0px -160px 0px 0px;
+			}
+		}
+	}
+	.swiper-button-prev {
+		display: block;
+		position: relative;
+		align-items: center;
+		width: 3%;
+		height: 100%;
+		left: 5%;
+		top: 50px;
+		svg {
+			rotate: (180deg);
+		}
+	}
+	.swiper-button-prev:after,
+	.swiper-rtl .swiper-button-next:after {
+		content: none;
+		display: none;
+	}
+	.swiper-button-next {
+		display: block;
+		position: relative;
+		width: 3%;
+		height: 100%;
+		left: 15%;
+		top: 50px;
+		svg {
+		}
+	}
+	.swiper-button-next:after,
+	.swiper-rtl .swiper-button-next:after {
+		content: none;
+	}
+}
+@media (max-width: 767.98px) {
+	.reviews-block-body {
+		margin: 75px 0px 110px 0px;
+		&__container {
+		}
+	}
+	.reviews-block-slider {
+		&__wrapper {
+		}
+	}
+	.review-item {
+		flex-direction: column;
+		&__text {
+			order: 2;
+		}
+		&__text-item {
+			font-size: 1.9rem;
+		}
+		&__image {
+			display: flex;
+			order: 1;
+			position: relative;
+			margin: 0px 0px 30px 0px;
+			height: 100%;
+			img {
+				max-width: 441px;
+				max-height: 469px;
+				flex: 0 1 100%;
+				margin: 0px 0px 0px 0px;
+			}
+		}
+	}
+	.swiper-button-prev {
+		display: block;
+		position: relative;
+		align-items: center;
+		width: 3%;
+		height: 100%;
+		left: 5%;
+		top: 50px;
+		svg {
+			rotate: (180deg);
+		}
+	}
+	.swiper-button-prev:after,
+	.swiper-rtl .swiper-button-next:after {
+		content: none;
+		display: none;
+	}
+	.swiper-button-next {
+		display: block;
+		position: relative;
+		width: 3%;
+		height: 100%;
+		left: 45%;
+		top: 50px;
+		svg {
+		}
+	}
+	.swiper-button-next:after,
+	.swiper-rtl .swiper-button-next:after {
+		content: none;
+	}
+}
+/*....</Display-adapt>.....................................................................................................................................*/
+/***</Content-4>****************************************************************************************************************/
+
+/*</ОСНОВНОЙ КОНТЕНТ>***************************************************************************************************************************************************/

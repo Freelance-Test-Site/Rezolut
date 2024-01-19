@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<!--Кодировка-->
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!--Адаптивность-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<!--Отключает создание ссылки у номера телефона на базе IOS-->
+	<meta name="format-detection" content="telephone=no">
+
+	<!--мета-теги для CEO-->
+	<!--Краткое описание страницы-->
+	<meta name="description" content="Пустой шаблон">
+	<!--Ключевые слова-->
+	<meta name="keywords" content="keywords">
+	<!--Доступ поисковых роботов к странице-->
+	<meta name="robots" content="none">
+	<!--
+		none - полный запрет индексации страницы
+		noindex - запрет индексации содержимого страницы
+		nofollow - игнорировать ссылки в пределах веб-страницы
+		noimageindex - запрет индексаци изображений на транице
+		noarchive - запрет на вывод в результатах поиска ссылки "Сохраненная копия"
+		nosnippet - запрет на вывод в поисковой выдаче под название станицы фрагмента текста, который описывает ее содержимое
+	-->
+
+	<!--Автор страницы-->
+	<meta name="Author" content="Author">
+	<!--Авторские права-->
+	<meta name="Copyright" content="Copyright">
+	<!--Адрес автора-->
+	<meta name="Adress" content="Adress">
+
+	<!--Редирект страницы-->
+	<!--Задержка в секундах; url = Адрес страницы/сайта-->
+	<!-- <meta http-equiv="refresh" content="5; url=index.html"> -->
+
+	<!--мета теги для соц. сетей-->
+	<!-- <meta name="" content="">
+	<meta name="" content="">
+	<meta name="" content="">
+	<meta name="" content="">
+	<meta name="" content="">
+	<meta name="" content="">
+	<meta name="" content="">
+	<meta name="" content="">
+	<meta name="" content=""> -->
+
+	<!--подключение слайдера-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:regular,600,700&display=swap&subset=cyrillic"
+		rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=Cormorant:regular,500&display=swap&subset=cyrillic"
+		rel="stylesheet" />
+
+	<!--Подключение стилей-->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!--Заголовок страницы в браузере-->
+	<title>Rezolut</title>
+</head>
+
+<!--scroller - scrollbar for firefox-->
+
+<body class="scroller ">
+	<div class="wrapper">
+		<header class="header">
+			<header class="header">
+				<div class="header__container _container">
+					<div class="header__logo">
+						<p class="header__logo-text">Rezolut</p>
+						<a data-goto=".main-block" class="header__logo-scroll menu__link-scroll" href="#"></a>
+					</div>
+					<div class="header__menu menu">
+						<div class="menu__icon icon__menu">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li class="menu__link">
+									<a data-goto="" class="menu__link-scroll _mobile-menu-title"
+										href="#">Rezolut</a>
+								</li>
+								<li class="menu__link">
+									<a data-goto="" class="menu__link-scroll" href="#">Мобильная связь</a>
+								</li>
+								<li class="menu__link"><a data-goto="" class="menu__link-scroll" href="#"
+										href="#">интернет + тв</a></li>
+								<li class="menu__link"><a data-goto="" class="menu__link-scroll" href="#"
+										href="#">для бизнеса</a></li>
+								<li class="menu__link"><a data-goto="" class="menu__link-scroll" href="#"
+										href="#">поддержка</a></li>
+							</ul>
+							<div class="menu__login-button login-button">
+								<a href="#" class="login-button__login-icon">
+									<svg class="login-button__icon-img" width="56" height="56"
+										viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<g clip-path="url(#clip0_30721_278)">
+											<path d="M28 55C42.9117 55 55 42.9117 55 28C55 13.0883 42.9117 1 28 1C13.0883 1 1 13.0883 1 28C1 42.9117 13.0883 55 28 55Z"
+												stroke="white" stroke-width="2" />
+											<path d="M38.9996 39.8753V37.2255C38.9996 35.8199 38.4412 34.4719 37.4473 33.478C36.4534 32.4841 35.1054 31.9258 33.6999 31.9258H23.1005C21.6949 31.9258 20.3469 32.4841 19.353 33.478C18.3591 34.4719 17.8008 35.8199 17.8008 37.2255V39.8753"
+												stroke="white" stroke-width="2" stroke-linecap="round"
+												stroke-linejoin="round" />
+											<path d="M28.4003 26.6267C31.3272 26.6267 33.7 24.254 33.7 21.327C33.7 18.4001 31.3272 16.0273 28.4003 16.0273C25.4733 16.0273 23.1006 18.4001 23.1006 21.327C23.1006 24.254 25.4733 26.6267 28.4003 26.6267Z"
+												stroke="white" stroke-width="2" stroke-linecap="round"
+												stroke-linejoin="round" />
+										</g>
+										<defs>
+											<clipPath id="clip0_30721_278">
+												<rect width="56" height="56" fill="white" />
+											</clipPath>
+										</defs>
+									</svg>
+
+								</a>
+								<div class="login-button__mail-button ">
+									<a href="#modal-window-form"
+										class="login-button__button _button button-open-form modal-link">
+										Подключить
+									</a>
+								</div>
+								<a href="
+								#" class="login-button__mobile">Личный кабинет</a>
+							</div>
+							<div class="menu__social ">
+								<ul class="menu__social-list">
+									<li class="menu__social-link">
+										<a data-goto="" href="#">YouTube</a>
+									</li>
+									<li class="menu__social-link">
+										<a data-goto="" href="#">Twitter</a>
+									</li>
+									<li class="menu__social-link">
+										<a data-goto="" href="#">VK</a>
+									</li>
+									<li class="menu__social-link">
+										<a data-goto="" href="#">FB</a>
+									</li>
+								</ul>
+							</div>
+						</nav>
+					</div>
+				</div>
+			</header>
+		</header>
+		<main class="page">
+			<section class="page__main-block main-block">
+				<div class="main-block__container _container">
+					<div class="main-block__body">
+						<div class="main-block__header main-block-header">
+							<p class="main-block-header__text">
+								Входим в топ-5 провайдеров региона
+							</p>
+							<h1 class="main-block-header__title">
+								Надежный провайдер <br> домашнего интернета и <br> ТВ <span> в
+									Подмосковье</span>
+							</h1>
+						</div>
+						<div class="main-block__bottom main-block-bottom">
+							<div class="main-block-bottom__item">
+								<h3>До 500 Мбит/c</h3>
+								<p>Высокая скорость по технологии GPON</p>
+							</div>
+							<div class="main-block-bottom__item">
+								<h3>Скидка 45% весь январь <br></h3>
+								<p>Для новых абонентов Rezolut</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="main-block__bgimage _ibg">
+					<img src="img/background/BG-Main.jpg" alt="bgcover">
+				</div>
+			</section>
+			<section class="page__about-us-block about-us-block">
+				<div class="about-us-block__container _container">
+					<div class="about-us-block__wrapper">
+						<h2 class="about-us-block__title _title">Почему выбирают нас</h2>
+						<div class="about-us-block__body">
+							<div class="about-us-block__top">
+								<p>Мы работаем только в Подмосковье. Благодаря <br> этому поддерживаем 
+									качество
+									и не распыляемся</p>
+							</div>
+							<div class="about-us-block__bottom">
+								<div class="about-us-block__items">
+									<div class="about-us-block__item">
+										<h3>Монтаж</h3>
+										<p>Бережно монтируем кабель, без повреждений интерьера вашей квартиры
+											или дома</p>
+									</div>
+									<div class="about-us-block__item">
+										<h3>Скорость</h3>
+										<p>Благодаря GPON и резервной линии, гарантируем скорость прямо по
+											договору</p>
+									</div>
+									<div class="about-us-block__item">
+										<h3>Поддержка</h3>
+										<p>Круглосуточная помощь в приложении или по горячей линии, даже в
+											праздники</p>
+									</div>
+									<div class="about-us-block__item">
+										<a class="about-us-block__modal-form" href="#">
+											<p>Оставить заявку</p><svg width="41" height="15"
+												viewBox="0 0 41 15" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path d="M40.7071 8.20711C41.0976 7.81658 41.0976 7.18342 40.7071 6.79289L34.3431 0.428932C33.9526 0.0384078 33.3195 0.0384078 32.9289 0.428932C32.5384 0.819457 32.5384 1.45262 32.9289 1.84315L38.5858 7.5L32.9289 13.1569C32.5384 13.5474 32.5384 14.1805 32.9289 14.5711C33.3195 14.9616 33.9526 14.9616 34.3431 14.5711L40.7071 8.20711ZM0 8.5H40V6.5H0V8.5Z"
+													fill="#D0B194" />
+											</svg>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__internet-tv-block internet-tv-block">
+				<div class="internet-tv-block__container _container">
+					<div class="internet-tv-block__image">
+						<img class="internet-tv-block__image-desktop" src="img/img/laptop.jpg" alt="laptop">
+						<img class="internet-tv-block__image-tablet" src="img/img/laptop-2.jpg" alt="laptop-2">
+						<img class="internet-tv-block__image-mobile" src="img/img/laptop-3.jpg" alt="laptop-3">
+					</div>
+					<div class="internet-tv-block__wrapper">
+						<h2 class="internet-tv-block__title _title">Домашний интернет и ТВ</h2>
+						<div class="internet-tv-block__body">
+							<div class="internet-tv-block__top">
+								<h3 class="internet-tv-block__text-1">Подключим сегодня <br> или на следующий
+									день</h3>
+								<p class="internet-tv-block__text-2">Наша зона покрытия значительно меньше,
+									нежели
+									у крупных провайдеров. Это позволяет нам работать быстро: 64% абонентов
+									получают интернет и ТВ сразу в день заявки. Даже если нужно подключить
+									частный дом, а не квартиру.</p>
+							</div>
+							<div class="internet-tv-block__bottom">
+								<div class="internet-tv-block__items">
+									<div class="internet-tv-block__item">
+										<div class="internet-tv-block__item-number">
+											14 536
+										</div>
+										<p class="internet-tv-block__item-text">
+											Активных абонентов по всему Подмосковью
+										</p>
+									</div>
+									<div class="internet-tv-block__item">
+										<div class="internet-tv-block__item-number">
+											4,91
+										</div>
+										<p class="internet-tv-block__item-text">
+											Средняя оценка качества домашнего интернета и ТВ
+										</p>
+									</div>
+								</div>
+								<div class="internet-tv-block__modal-form-item">
+									<a class="internet-tv-block__modal-form" href="#">
+										<p>Оставить заявку</p><svg width="41" height="15" viewBox="0 0 41 15"
+											fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M40.7071 8.20711C41.0976 7.81658 41.0976 7.18342 40.7071 6.79289L34.3431 0.428932C33.9526 0.0384078 33.3195 0.0384078 32.9289 0.428932C32.5384 0.819457 32.5384 1.45262 32.9289 1.84315L38.5858 7.5L32.9289 13.1569C32.5384 13.5474 32.5384 14.1805 32.9289 14.5711C33.3195 14.9616 33.9526 14.9616 34.3431 14.5711L40.7071 8.20711ZM0 8.5H40V6.5H0V8.5Z"
+												fill="#D0B194" />
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__reviews-block reviews-block-body">
+				<div class="reviews-block-body__container _container">
+					<div class="reviews-block-slider swiper-container">
+						<div class="reviews-block-slider__wrapper swiper-wrapper">
+							<div class="reviews-block-slider__slide swiper-slide">
+								<div class="reviews-block-slider__review-item review-item">
+									<div class="review-item__text">
+										<h2 class="review-item__title _title">
+											Отзывы клиентов
+										</h2>
+										<p class="review-item__text-item">
+											Уже семь лет пользуемся Rezolut: подключали для съёмной квартиры,
+											а сейчас пользуемся в своей. За 7 лет только один раз звонили
+											в поддержку — сменить адрес установки
+										</p>
+										<div class="review-item__city">
+											— Семья Мироновых, г. Реутов
+										</div>
+									</div>
+									<div class="review-item__image">
+										<img src="img/img/family.jpg" alt="family">
+									</div>
+								</div>
+							</div>
+							<div class="reviews-block-slider__slide swiper-slide">
+								<div class="reviews-block-slider__review-item review-item">
+									<div class="review-item__text">
+										<h2 class="review-item__title _title">
+											Отзывы клиентов
+										</h2>
+										<p class="review-item__text-item">
+											Уже семь лет пользуемся Rezolut: подключали для съёмной квартиры,
+											а сейчас пользуемся в своей. За 7 лет только один раз звонили
+											в поддержку — сменить адрес установки
+										</p>
+										<div class="review-item__city">
+											— Семья Мироновых, г. Реутов
+										</div>
+									</div>
+									<div class="review-item__image">
+										<img src="img/img/family.jpg" alt="family">
+									</div>
+								</div>
+							</div>
+							<div class="reviews-block-slider__slide swiper-slide">
+								<div class="reviews-block-slider__review-item review-item">
+									<div class="review-item__text">
+										<h2 class="review-item__title _title">
+											Отзывы клиентов
+										</h2>
+										<p class="review-item__text-item">
+											Уже семь лет пользуемся Rezolut: подключали для съёмной квартиры,
+											а сейчас пользуемся в своей. За 7 лет только один раз звонили
+											в поддержку — сменить адрес установки
+										</p>
+										<div class="review-item__city">
+											— Семья Мироновых, г. Реутов
+										</div>
+									</div>
+									<div class="review-item__image">
+										<img src="img/img/family.jpg" alt="family">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-button-prev">
+							<svg width="41" height="15" viewBox="0 0 41 15" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path d="M40.7071 8.20711C41.0976 7.81658 41.0976 7.18342 40.7071 6.79289L34.3431 0.428932C33.9526 0.0384078 33.3195 0.0384078 32.9289 0.428932C32.5384 0.819457 32.5384 1.45262 32.9289 1.84315L38.5858 7.5L32.9289 13.1569C32.5384 13.5474 32.5384 14.1805 32.9289 14.5711C33.3195 14.9616 33.9526 14.9616 34.3431 14.5711L40.7071 8.20711ZM0 8.5H40V6.5H0V8.5Z"
+									fill="#D0B194" />
+							</svg>
+						</div>
+						<div class="swiper-button-next"><svg width="41" height="15" viewBox="0 0 41 15"
+								fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M40.7071 8.20711C41.0976 7.81658 41.0976 7.18342 40.7071 6.79289L34.3431 0.428932C33.9526 0.0384078 33.3195 0.0384078 32.9289 0.428932C32.5384 0.819457 32.5384 1.45262 32.9289 1.84315L38.5858 7.5L32.9289 13.1569C32.5384 13.5474 32.5384 14.1805 32.9289 14.5711C33.3195 14.9616 33.9526 14.9616 34.3431 14.5711L40.7071 8.20711ZM0 8.5H40V6.5H0V8.5Z"
+									fill="#D0B194" />
+							</svg>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container _container">
+				<div class="footer__body">
+					<div class="footer__body-top-block top-block">
+						<div class="top-block__logo">
+							<p class="top-block__logo-text">Rezolut</p>
+							<a data-goto=".main-block" class="top-block__logo-scroll menu__link-scroll"
+								href="#"></a>
+						</div>
+						<div class="top-block__main">
+							<div class="top-block__body">
+								<ul class="top-block__body-list">
+									<p class="top-block__body-link-title">Меню</p>
+									<li class="top-block__body-link">
+										<a href="#">Мобильная связь</a>
+									</li>
+									<li class="top-block__body-link">
+										<a href="#">интернет + тв</a>
+									</li>
+									<li class="top-block__body-link">
+										<a href="#">для бизнеса</a>
+									</li>
+									<li class="top-block__body-link">
+										<a href="#">поддержка</a>
+									</li>
+								</ul>
+								<ul class="top-block__body-list">
+									<p class="top-block__body-link-title">Помощь</p>
+									<li class="top-block__body-link">
+										<a href="#">Заявка на установку</a>
+									</li>
+									<li class="top-block__body-link">
+										<a href="#">написать в чат</a>
+									</li>
+								</ul>
+
+							</div>
+							<div class="top-block__adress">
+								<ul class="top-block__adress-list">
+									<p class="top-block__adress-list-title">Адрес</p>
+									<li class="top-block__adress-link">Москва, Талалихина 19-2</li>
+									<li class="top-block__adress-link">Пн-Сб: с 9:00 до 20:00</li>
+								</ul>
+								<ul class="top-block__adress-list-social">
+									<p class="top-block__adress-list-social-title">Мы в соцсетях</p>
+									<div class="top-block__adress-body-social">
+										<li class="top-block__adress-link-social"><a href="#">
+												<svg width="20" height="15" viewBox="0 0 20 15" fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path d="M19.2204 1.28765C18.4985 0.37306 17.1656 0 14.6201 0H5.37975C2.77594 0 1.42045 0.39713 0.70123 1.37083C5.96046e-08 2.3202 0 3.71903 0 5.65503V9.345C0 13.0957 0.832 15 5.37975 15H14.6201C16.8276 15 18.0508 14.6709 18.8422 13.8637C19.6538 13.036 20 11.6847 20 9.345V5.65503C20 3.61335 19.9458 2.20628 19.2204 1.28765ZM12.8401 8.0095L8.64406 10.3465C8.55026 10.3988 8.44767 10.4247 8.34522 10.4247C8.22922 10.4247 8.11348 10.3914 8.01097 10.3253C7.81794 10.2006 7.70006 9.9777 7.70006 9.7371V5.07803C7.70006 4.83794 7.81761 4.61518 8.01026 4.49045C8.20297 4.36574 8.44264 4.35721 8.64258 4.4679L12.8386 6.7899C13.0521 6.908 13.1861 7.1429 13.1864 7.3991C13.1867 7.6556 13.0533 7.8908 12.8401 8.0095Z"
+														fill="#959595" />
+												</svg>
+											</a>
+										</li>
+										<li class="top-block__adress-link-social"><a href="#">
+												<svg width="19" height="11" viewBox="0 0 19 11" fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path d="M18.7888 9.7328C18.7659 9.6835 18.7446 9.6426 18.7247 9.6098C18.397 9.0196 17.7708 8.2951 16.8463 7.4362L16.8268 7.4165L16.8171 7.4069L16.8071 7.397H16.7972C16.3776 6.9971 16.1119 6.7281 16.0007 6.5905C15.7972 6.3282 15.7515 6.0627 15.8628 5.7937C15.9414 5.5905 16.2367 5.1613 16.7479 4.5055C17.0168 4.158 17.2298 3.87947 17.3871 3.66962C18.5215 2.16156 19.0133 1.19789 18.8624 0.77823L18.8038 0.68016C18.7644 0.621119 18.6628 0.567109 18.499 0.517849C18.335 0.468699 18.1252 0.46057 17.8695 0.493329L15.0372 0.512889C14.9913 0.496629 14.9257 0.498149 14.8404 0.517849C14.7552 0.537559 14.7125 0.54744 14.7125 0.54744L14.6632 0.57207L14.6241 0.601659C14.5913 0.621229 14.5552 0.65564 14.5158 0.70483C14.4766 0.75384 14.444 0.81137 14.4177 0.87692C14.1093 1.67025 13.7588 2.40785 13.3653 3.08968C13.1227 3.49625 12.8999 3.8486 12.6965 4.1469C12.4932 4.4452 12.3227 4.6649 12.1851 4.8058C12.0473 4.9467 11.923 5.0597 11.8113 5.145C11.6999 5.2304 11.6148 5.2664 11.5558 5.2532C11.4967 5.2401 11.4411 5.227 11.3884 5.2139C11.2967 5.1548 11.2229 5.0745 11.1673 4.9729C11.1114 4.8713 11.0738 4.7434 11.0542 4.5893C11.0345 4.4351 11.023 4.3025 11.0197 4.191C11.0166 4.0797 11.018 3.92215 11.0247 3.71891C11.0315 3.51557 11.0345 3.37799 11.0345 3.30587C11.0345 3.05668 11.0394 2.78624 11.0491 2.49449C11.0591 2.20272 11.0671 1.97156 11.0738 1.80125C11.0805 1.63077 11.0836 1.45042 11.0836 1.26028C11.0836 1.07013 11.072 0.921009 11.0491 0.812779C11.0266 0.704689 10.9919 0.59977 10.9462 0.49805C10.9002 0.39643 10.8329 0.31782 10.7446 0.26202C10.6561 0.20629 10.546 0.162059 10.4151 0.129199C10.0676 0.0505495 9.625 0.00800947 9.0873 0.00139947C7.86787 -0.0116905 7.08433 0.0670497 6.73683 0.23753C6.59915 0.30956 6.47455 0.40797 6.36316 0.53246C6.24511 0.67675 6.22865 0.755499 6.31387 0.768449C6.70731 0.827389 6.98584 0.968379 7.14978 1.19128L7.20885 1.3094C7.2548 1.39461 7.30068 1.54549 7.3466 1.76181C7.39245 1.97813 7.42204 2.21743 7.43505 2.47956C7.46778 2.95826 7.46778 3.36804 7.43505 3.70892C7.40223 4.0499 7.37123 4.3154 7.34164 4.5056C7.31205 4.6957 7.26782 4.8498 7.20885 4.9678C7.14978 5.0858 7.11047 5.1579 7.09077 5.1841C7.07109 5.2103 7.0547 5.2268 7.04168 5.2332C6.95646 5.2659 6.86783 5.2825 6.7761 5.2825C6.68423 5.2825 6.57283 5.2366 6.44173 5.1447C6.31066 5.0529 6.17464 4.9268 6.03364 4.7661C5.89265 4.6054 5.73366 4.3809 5.55656 4.0924C5.37961 3.80396 5.19601 3.46304 5.00587 3.06967L4.84855 2.78438C4.75021 2.60085 4.61587 2.33362 4.4454 1.98292C4.27482 1.63209 4.12405 1.29272 3.99298 0.964889C3.94058 0.827209 3.86187 0.722389 3.75699 0.650259L3.70777 0.620669C3.67504 0.594499 3.62251 0.566699 3.55045 0.537069C3.47829 0.507479 3.40298 0.486269 3.32424 0.473209L0.62954 0.49278C0.35418 0.49278 0.16734 0.555159 0.06896 0.679749L0.02959 0.738689C0.00992001 0.771509 0 0.82394 0 0.89611C0 0.96824 0.01967 1.05677 0.05904 1.16158C0.45242 2.08613 0.88021 2.97777 1.34241 3.83664C1.80461 4.6955 2.20625 5.3874 2.54709 5.9116C2.88801 6.4362 3.23551 6.9313 3.58958 7.3966C3.94365 7.8622 4.17802 8.1605 4.2927 8.2916C4.40751 8.4229 4.49768 8.5211 4.56323 8.5866L4.80915 8.8226C4.9665 8.98 5.19756 9.1685 5.50245 9.3881C5.8074 9.6078 6.14501 9.8241 6.51545 10.0374C6.88594 10.2503 7.31698 10.424 7.80876 10.5584C8.30049 10.6929 8.77908 10.7469 9.2446 10.7209H10.3757C10.605 10.701 10.7788 10.629 10.8969 10.5045L10.936 10.4552C10.9624 10.416 10.987 10.3553 11.0097 10.2734C11.0327 10.1915 11.0441 10.1012 11.0441 10.003C11.0374 9.7211 11.0589 9.467 11.108 9.2409C11.157 9.0148 11.2128 8.8443 11.2753 8.7295C11.3378 8.6148 11.4082 8.518 11.4867 8.4395C11.5653 8.3609 11.6213 8.3133 11.6542 8.2969C11.6868 8.2804 11.7129 8.2692 11.7326 8.2624C11.8899 8.21 12.0751 8.2608 12.2884 8.415C12.5015 8.5691 12.7015 8.7593 12.8884 8.9854C13.0753 9.2117 13.2998 9.4657 13.5619 9.7475C13.8244 10.0295 14.0538 10.2391 14.2503 10.377L14.447 10.495C14.5784 10.5737 14.7488 10.6459 14.9587 10.7114C15.1682 10.777 15.3517 10.7934 15.5092 10.7606L18.0268 10.7213C18.2759 10.7213 18.4696 10.6801 18.607 10.5983C18.7448 10.5163 18.8266 10.426 18.8529 10.3279C18.8793 10.2296 18.8807 10.118 18.8579 9.9933C18.8346 9.8689 18.8116 9.7819 18.7888 9.7328Z"
+														fill="#959595" />
+												</svg>
+											</a>
+										</li>
+										<li class="top-block__adress-link-social"><a href="#">
+												<svg width="10" height="17" viewBox="0 0 10 17" fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path d="M8.845 0.00354004L6.6404 0C4.1637 0 2.56318 1.64212 2.56318 4.18372V6.1127H0.34664C0.1551 6.1127 0 6.26798 0 6.45952V9.2544C0 9.446 0.15528 9.601 0.34664 9.601H2.56318V16.6534C2.56318 16.8449 2.71829 17 2.90982 17H5.8018C5.9933 17 6.1484 16.8447 6.1484 16.6534V9.601H8.7401C8.9316 9.601 9.0867 9.446 9.0867 9.2544L9.0878 6.45952C9.0878 6.36755 9.0512 6.27948 8.9863 6.21439C8.9214 6.14931 8.8329 6.1127 8.741 6.1127H6.1484V4.47748C6.1484 3.69153 6.3357 3.29254 7.3595 3.29254L8.8446 3.29201C9.036 3.29201 9.1911 3.13673 9.1911 2.94537V0.35018C9.1911 0.15899 9.0361 0.00389004 8.845 0.00354004Z"
+														fill="#959595" />
+												</svg>
+											</a>
+										</li>
+										<li class="top-block__adress-link-social"><a href="#">
+												<svg width="17" height="14" viewBox="0 0 17 14" fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path d="M17 1.63964C16.3312 1.92731 15.6622 2.10696 14.9938 2.17912C15.7488 1.72609 16.2595 1.08606 16.5257 0.25911C15.8349 0.66892 15.0979 0.9493 14.3142 1.10038C13.6238 0.3669 12.7754 0 11.7684 0C10.8049 0 9.9834 0.33973 9.3035 1.01934C8.6241 1.69891 8.2843 2.52044 8.2843 3.48402C8.2843 3.74285 8.313 4.00903 8.3706 4.28226C6.94668 4.21036 5.61095 3.85262 4.36319 3.20901C3.11549 2.56532 2.05659 1.70776 1.18649 0.63632C0.87006 1.17553 0.7118 1.76171 0.7118 2.39452C0.7118 2.99139 0.85201 3.54518 1.13261 4.05577C1.41303 4.56627 1.79065 4.97971 2.26529 5.29616C1.70428 5.27455 1.17934 5.1271 0.69042 4.85382V4.89696C0.69042 5.7384 0.9547 6.4771 1.48319 7.1138C2.01175 7.7503 2.67878 8.151 3.48413 8.3164C3.18207 8.3955 2.87638 8.435 2.5672 8.435C2.36583 8.435 2.14647 8.4171 1.90921 8.3814C2.13212 9.0788 2.54204 9.652 3.13884 10.1018C3.73575 10.5511 4.41173 10.7828 5.16683 10.7976C3.90123 11.7898 2.45941 12.2859 0.84139 12.2859C0.53211 12.2859 0.25174 12.2718 0 12.2429C1.61807 13.2855 3.40146 13.8068 5.3503 13.8068C6.58718 13.8068 7.7486 13.6111 8.8341 13.219C9.9202 12.8273 10.8478 12.3022 11.6173 11.6441C12.3866 10.9862 13.0501 10.2293 13.6074 9.3735C14.1646 8.5178 14.5798 7.6243 14.8533 6.6931C15.1265 5.76167 15.2631 4.82881 15.2631 3.89379C15.2631 3.69242 15.2595 3.54148 15.2523 3.44075C15.9357 2.9448 16.5181 2.34422 17 1.63964Z"
+														fill="#959595" />
+												</svg>
+											</a>
+										</li>
+									</div>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="footer__body-bottom-block">
+						<div class="footer__body-bottom-block-empty"></div>
+						<div class="footer__body-bottom-block-1">
+							<p>Обработка персональных данных</p>
+							<p>Политика конфиденциальности</p>
+						</div>
+						<div class="footer__body-bottom-block-2">
+							<p>Автор главного фото: Roman Tymochko</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<div id="modal-window-form" class="modal-window">
+		<a href="#page" class="modal-window__modal-area"></a>
+		<div class="modal-window__body">
+			<div class="modal-window__content">
+				<a href="#page" class="modal-window__close close-modal-window"><span></span><span></span></a>
+				<form class="form-block__form-container" id="form" action="#" method="post"
+					enctype="multipart/form-data">
+					<div class="modal-form-block__title">Заявка на <br> подключение</div>
+					<div class="modal-form-block__text">Заполните форму ниже и мы перезвоним вам в течении 15 минут
+					</div>
+					<div class="modal-form-block__body">
+						<div class="modal-form-block__modal-form-input-items modal-form-input-items">
+							<div class="modal-form-input-items__input-item">
+								<input placeholder="Ваше имя" id="formName" type="text" name="name"
+									class="modal-form-input-item__input-input _req">
+							</div>
+							<div class="modal-form-input-items__input-item">
+								<input placeholder="+7(___)-___-__-__" id="formPhone" type="tel" name="phone"
+									class="modal-form-input-item__input-input">
+							</div>
+						</div>
+						<button type="submit" class="modal-form__button">
+							Отправить
+						</button>
+						<div class="form__item">
+							<div class="checkbox">
+								<input id="formAgreement" checked type="checkbox" name="agreement"
+									class="checkbox__input _req">
+								<label for="formAgreement" class="checkbox__label"><span>
+										Я даю своё согласие на
+										обработку
+										персональных данных в соответствии с
+										<a href="copyrights.html">Условиями</a>*</span></label>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+	<script src="js/script.js"></script>
+	<script src="js/mail-form.js"></script>
+	<script src="js/modal-window.js"></script>
+	<script src="js/swiper-slider.js"></script>
+	<!-- <script src="js/dropdown-menu.js"></script> -->
+</body>
+
+</html>

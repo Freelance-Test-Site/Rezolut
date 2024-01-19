@@ -1,0 +1,33 @@
+::-webkit-scrollbar {
+	width: 10px;
+	height: 100%;
+	textarea {
+		display: none;
+	}
+}
+
+::-webkit-scrollbar-track-piece {
+	background-color: #9a9a9a;
+	width: 15px;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+	max-height: 55px;
+	background-color: #2e2e2e;
+	border-radius: 55px;
+}
+
+//scrollbar for firefox
+html {
+	scrollbar-width: thin;
+	scrollbar-color: #2e2e2e #9a9a9a;
+	textarea {
+		scrollbar-width: none;
+	}
+	/*
+	auto — дефолтное значение. Если задано overflow: scroll или overflow: auto и контент вызывает переполнение, то появится отступ для скроллбара.
+stable — отступ для скроллбара появляется если значение overflow равно hidden, scroll или auto, вне зависимости от того, вызывает контент переполнение или нет.
+stable both-edges — то же самое что и stable, но отступы будут создаваться с двух противоположных сторон. При вертикальной прокрутке — справа и слева, при горизонтальной — сверху и снизу.
+	*/
+	scrollbar-gutter: stable;
+}

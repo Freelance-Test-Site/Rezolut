@@ -1,0 +1,39 @@
+/****************************************************************Цвета******************************************************************/
+
+//Переменные для цвета
+$COLOR_RED: rgb(255, 0, 0);
+$COLOR_GREEN: rgb(0, 255, 0);
+$COLOR_BLUE: rgb(0, 0, 255);
+$COLOR_YELLOW: rgb(255, 255, 0);
+$COLOR_PINK: rgb(255, 0, 255);
+$COLOR_WHITE: rgb(255, 255, 255);
+$COLOR_BLACK: rgb(0, 0, 0);
+$BACKGROUND_COLOR_1: $COLOR_WHITE;
+$BACKGROUND_COLOR_2: $COLOR_BLACK;
+// $BACKGROUND_COLOR_3:;
+
+$MODAL_BODY_COLOR_1: #fff;
+$MODAL_BACKGROUND_COLOR_1: rgba(0, 0, 0, 0.748);
+
+$CUSTOM_COLOR_SWIPER_ARROW: #d0b194;
+$CUSTOM_COLOR_SWIPER_ARROW_HOVER: rgb(136, 136, 136);
+$CUSTOM_COLOR_BUTTON_STANDARD_DEFAULT: #d0b194c2;
+$CUSTOM_COLOR_BUTTON_STANDARD_ACTIVE: #a08871;
+$CUSTOM_COLOR_BUTTON_STANDARD_HOVER: #d0b194;
+// $CUSTOM_COLOR_6:;
+// $CUSTOM_COLOR_7:;
+// $CUSTOM_COLOR_8:;
+// $CUSTOM_COLOR_9:;
+/******************************Миксины и переменные*************************************************************************************************************************************************/
+
+//Заголовки и текст
+// Миксины - шрифт
+@mixin fontz($fz, $fw, $col, $lh, $ls) {
+	font-size: $fz;
+	font-weight: $fw;
+	color: $col;
+	line-height: $lh;
+	letter-spacing: $ls;
+}
+
+/**************************************************************************************************************************************/
